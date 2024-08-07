@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Client Views -->
+    <record id="view_client_tree" model="ir.ui.view">
+        <field name="name">real.estate.client.tree</field>
+        <field name="model">real.estate.customer</field>
+        <field name="arch" type="xml">
+            <tree string="Customers">
+                <field name="name"/>
+                <field name="email"/>
+                <field name="phone"/>
+                <field name="address"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_client_form" model="ir.ui.view">
+        <field name="name">real.estate.client.form</field>
+        <field name="model">real.estate.customer</field>
+        <field name="arch" type="xml">
+            <form string="Customer">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="email"/>
+                        <field name="phone"/>
+                        <field name="address"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Property Views -->
+    <record id="view_property_tree" model="ir.ui.view">
+        <field name="name">real.estate.property.tree</field>
+        <field name="model">real.estate.property</field>
+        <field name="arch" type="xml">
+            <tree string="Properties">
+                <field name="name"/>
+                <field name="value"/>
+                <field name="location"/>
+                <field name="property_type"/>
+                <field name="price"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_property_form" model="ir.ui.view">
+        <field name="name">real.estate.property.form</field>
+        <field name="model">real.estate.property</field>
+        <field name="arch" type="xml">
+            <form string="Property">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="value"/>
+                        <field name="location"/>
+                        <field name="property_type"/>
+                        <field name="price"/>
+                        <field name="interested_propety"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Agent Views -->
+    <record id="view_agent_tree" model="ir.ui.view">
+        <field name="name">real.estate.agent.tree</field>
+        <field name="model">real.estate.agent</field>
+        <field name="arch" type="xml">
+            <tree string="Agents">
+                <field name="name"/>
+                <field name="email"/>
+                <field name="phone"/>
+                <field name="address"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_agent_form" model="ir.ui.view">
+        <field name="name">real.estate.agent.form</field>
+        <field name="model">real.estate.agent</field>
+        <field name="arch" type="xml">
+            <form string="Agent">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="email"/>
+                        <field name="phone"/>
+                        <field name="address"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
